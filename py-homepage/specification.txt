@@ -1,0 +1,8 @@
+HTML tags: link, script, meta, nav, div, p, img, h1, h3, h6, b, br, ul, li, button,  footer.
+
+CSS properties: margin, padding, height, width, font-family, background-color, color, position,
+                display, justify-content, text-align, align-items, text-decoration, flex.
+
+How you chose to use JavaScript and Bootstrap?
+                I chose to use JavaScript and Bootstrap because they provide a solid foundation for building responsive and interactive web applications efficiently.
+                

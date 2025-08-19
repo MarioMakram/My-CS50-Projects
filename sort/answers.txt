@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: on reversed (50000) list took 5.29s, on sorted list (50000) took 0.73s
+
+sort2 uses: Merge Sort
+
+How do you know?: on reversed (50000) list took 2.05s, on sorted list (50000) took 1.36s
+
+sort3 uses: Selection Sort
+
+How do you know?: on reversed (50000) list took 3.45s, on sorted list (50000) took 3.08s

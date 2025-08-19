@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>Trivia</title>
+        <script>
+            function correction(event) {
+                if (event.target.innerHTML == 'Helium'){
+                    event.target.style.backgroundColor='green';
+                    event.target.parentElement.querySelector('#result1').innerHTML ="Correct!";
+                }
+                else{
+                    event.target.style.backgroundColor='red';
+                    event.target.parentElement.querySelector('#result1').innerHTML ="Incorrect";
+                }
+            }
+            function checkAnswer(){
+
+                if (document.getElementById('ans').value == 'George Washington'){
+                    document.getElementById('ans').style.backgroundColor='green';
+                    document.getElementById('result2').innerHTML = "Correct!";
+                }
+                else{
+                    document.getElementById('ans').style.backgroundColor='red';
+                    document.getElementById('result2').innerHTML = "Incorrect";
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Trivia!</h1>
+        </header>
+        <main class="container"s>
+            <Div class="section">
+                <h2>Part1: Multiple Choise</h2>
+                <h3>Which of the following elements is a noble gas?</h3>
+                <button type="submit" id="1" onclick="correction(event)">Oxygen</button>
+                <button type="submit" id="2" onclick="correction(event)">Nitrogen</button>
+                <button type="submit" id="3" onclick="correction(event)">Helium</button>
+                <button type="submit" id="4" onclick="correction(event)">Hydrogen</button>
+                <p id="result1"> </p>
+            </Div>
+            <div class="section">
+                <h2>Part2: Free Response</h2>
+                <h3>Who was the first President of the United States?</h3>
+                <input type="text" name="ans" id="ans">
+                <button type="submit" onclick="checkAnswer()">Check Answer</button>
+                <p id="result2"> </p>
+            </div>
+        </main>
+        
+    </body>
+</html>
